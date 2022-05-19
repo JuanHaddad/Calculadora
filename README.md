@@ -1,2 +1,2 @@
 # Meus-projetos
- Um pouco dos meus projetos
+ Alguns projetos feitos em Python.
