@@ -5,39 +5,35 @@ from funcoes import *
 menu('CALCULADORA')
 op = operacoes() # Call the def which ask for a option to make basics operations
 if op == 1:
-    menu('SOMA') 
+    menu('SOMA') # Vai somar dois números
     v = soma()
 
 elif op == 2:
-    menu('SUBTRAÇÃO')
+    menu('SUBTRAÇÃO') # Vai subtrair dois números
     v = subtracao()
 
 elif op == 3:
-    menu('MULTIPLICAÇÃO')
+    menu('MULTIPLICAÇÃO') # Vai multiplicar dois números
     v = multiplicacao()
 
 elif op == 4:
-    menu('DIVISÃO')
+    menu('DIVISÃO') # Dividir
     v = divisao()
 
 elif op == 5:
-    menu('POTENCIAÇÃO')
+    menu('POTENCIAÇÃO') # Um numero elevado a outro
     v = potenciacao()
 
 elif op == 6:
-    menu('RAIZ')
+    menu('RAIZ') # A raiz que o usuário escolher de outro número
     v = raiz()
 
 elif op == 7:
-    menu('FATORIAL')
+    menu('FATORIAL') # Fatorial de um número, só aparece se o número no sistema for inteiro
     v = fat()
 
 print(f'O resultado dessa operação foi \033[36m{v:.2f}\033[m')
 while True:
-    try:
-        v = int(v)
-    except:
-        pass
     r = str(input(f'Quer partir pra outra operação com o valor {v:.2f}? [S/N] ')).upper().strip()[0]
     if r not in 'SN':
         r = str(input('ERRO! Digite S ou N.'))
@@ -70,6 +66,10 @@ while True:
     elif op == 6:
         menu('RAIZ')
         v = raiz(v)
+
+    elif op == 7:
+        menu('FATORIAL')
+        v = fat(v)
 
     print(f'O resultado dessa operação foi \033[36m{v:.2f}\033[m')
 
