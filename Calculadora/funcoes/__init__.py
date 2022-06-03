@@ -9,6 +9,7 @@ def menu(msg): # Cria uma interface.
 
 def operacoes(a=0): # Verifica qual a operação a ser feita
     operacoes = ['Soma', 'Subtração', 'Multiplicação', 'Divisão', 'Potenciação', 'Raiz']
+    # Se o número no sistema for inteiro, a opção do Fatorial é possível, se não, ela é retirada.
     if a - int(a) == 0:
         operacoes.append('Fatorial')
     else:

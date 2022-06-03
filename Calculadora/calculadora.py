@@ -34,6 +34,7 @@ elif op == 7:
 
 print(f'O resultado dessa operação foi \033[36m{v:.2f}\033[m')
 while True:
+    # Verifica se o usuário quer continuar com o resultado da operação anterior
     r = str(input(f'Quer partir pra outra operação com o valor {v:.2f}? [S/N] ')).upper().strip()[0]
     if r not in 'SN':
         r = str(input('ERRO! Digite S ou N.'))
