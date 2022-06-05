@@ -1,2 +1,2 @@
-# Meus-projetos
- Alguns projetos feitos em Python.
+# Calculadora Básica
+ Uma calculadora simples feita em Python por mim.
