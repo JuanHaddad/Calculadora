@@ -3,7 +3,7 @@ from funcoes import *
 # Calculadora básica em python
 
 menu('CALCULADORA')
-op = operacoes() # Call the def which ask for a option to make basics operations
+op = operacoes() # Chama a função que vai perguntar qual das operações será feita
 if op == 1:
     menu('SOMA') # Vai somar dois números
     v = soma()
