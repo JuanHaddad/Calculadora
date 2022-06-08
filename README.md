@@ -1,2 +1,2 @@
-# Calculadora Básica
- Uma calculadora simples feita em Python por mim.
+# Meus projetos.
+Alguns programas feitos por mim.
