@@ -1,2 +1,3 @@
-# Meus projetos.
-Alguns programas feitos por mim.
+# Meus projetos
+ Alguns projetos feitos por mim, por enquanto só em Python.
+
