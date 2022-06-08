@@ -4,31 +4,23 @@ from funcoes import *
 
 menu('CALCULADORA')
 op = operacoes() # Chama a função que vai perguntar qual das operações será feita
-if op == 1:
-    menu('SOMA') # Vai somar dois números
-    v = soma()
+if op <= 5:
+    if op == 1:
+        menu('SOMA') # Vai somar dois números
+    elif op == 2:
+        menu('SUBTRAÇÃO') # Vai subtrair dois números
+    elif op == 3:
+        menu('MULTIPLICAÇÃO') # Vai multiplicar dois números
+    elif op == 4:
+        menu('DIVISÃO') # Dividir
+    elif op == 5:
+        menu('POTENCIAÇÃO') # Um numero elevado a outro
+    v = operando(op)
 
-elif op == 2:
-    menu('SUBTRAÇÃO') # Vai subtrair dois números
-    v = subtracao()
-
-elif op == 3:
-    menu('MULTIPLICAÇÃO') # Vai multiplicar dois números
-    v = multiplicacao()
-
-elif op == 4:
-    menu('DIVISÃO') # Dividir
-    v = divisao()
-
-elif op == 5:
-    menu('POTENCIAÇÃO') # Um numero elevado a outro
-    v = potenciacao()
-
-elif op == 6:
+if op == 6:
     menu('RAIZ') # A raiz que o usuário escolher de outro número
     v = raiz()
-
-elif op == 7:
+if op == 7:
     menu('FATORIAL') # Fatorial de um número, só aparece se o número no sistema for inteiro
     v = fat()
 
@@ -43,28 +35,20 @@ while True:
 
     print('-'*32)
     op = operacoes(v)
+    if op <= 5:
+        if op == 1:
+            menu('SOMA')
+        elif op == 2:
+            menu('SUBTRAÇÃO')
+        elif op == 3:
+            menu('MULTIPLICAÇÃO')
+        elif op == 4:
+            menu('DIVISÃO')
+        elif op == 5:
+            menu('POTENCIAÇÃO')
+        v = operando(op, v)
 
-    if op == 1:
-        menu('SOMA')
-        v = soma(v)
-
-    elif op == 2:
-        menu('SUBTRAÇÃO')
-        v = subtracao(v)
-
-    elif op == 3:
-        menu('MULTIPLICAÇÃO')
-        v = multiplicacao(v)
-
-    elif op == 4:
-        menu('DIVISÃO')
-        v = divisao(v)
-
-    elif op == 5:
-        menu('POTENCIAÇÃO')
-        v = potenciacao(v)
-
-    elif op == 6:
+    if op == 6:
         menu('RAIZ')
         v = raiz(v)
 

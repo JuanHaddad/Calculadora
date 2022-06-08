@@ -26,60 +26,40 @@ def operacoes(a=0): # Verifica qual a operação a ser feita
         n = int(input(f'ERRO! Digite um número válido: '))
     return n
 
-def soma(a=0):
-    if a != 0:
-        b = float(input(f'Por quanto você quer somar {a:.2f}? '))
-    else:
-        a = float(input('Digite o número a somar: '))
-        b = float(input(f'Por quanto você quer somar {a:.2f}? '))
-    print('Calculando...')
-    sleep(1)
-    c = a + b
-    return c
-
-def subtracao(a=0):
-    if a != 0:
-        b = float(input(f'Por quanto você quer subtrair {a:.2f}? '))
-    else:
-        a = float(input('Digite o número a ser subtraído: '))
-        b = float(input(f'Por quanto você quer subtrair {a:.2f}? '))
-    print('Calculando...')
-    sleep(1)
-    c = a - b
-    return c
-
-def multiplicacao(a=0):
-    if a != 0:
-        b = float(input(f'Por quanto você quer multiplicar {a:.2f}? '))
-    else:
-        a = float(input('Digite o número a ser multiplicado: '))
-        b = float(input(f'Por quanto você quer multiplicar {a:.2f}? '))
-    print('Calculando...')
-    sleep(1)
-    c = a * b
-    return c
-
-def divisao(a=0):
-    if a != 0:
-        b = float(input(f'Por quanto você quer dividir {a:.2f}? '))
-    else:
-        a = float(input('Digite o número a ser dividido: '))
-        b = float(input(f'Por quanto você quer dividir {a:.2f}? '))
-    print('Calculando...')
-    sleep(1)
-    c = a / b
-    return c
-
-def potenciacao(a=0):
-    if a != 0:
-        b = float(input(f'Por quanto você quer elevar {a:.2f}? '))
-    else:
-        a = float(input('Digite o número a ser elevado: '))
-        b = float(input(f'Por quanto você quer elevar {a:.2f}? '))
-    print('Calculando...')
-    sleep(1)
-    c = a ** b
-    return c
+def operando(i, a=0):
+    while True:
+        if a != 0:
+            print(f'Por quanto você quer', end=' ')
+            if i == 1:
+                b = float(input(f"somar {a:.2f}? "))
+                c = a + b
+            elif i == 2:
+                b = float(input(f"subtrair {a:.2f}? "))
+                c = a - b
+            elif i == 3:
+                b = float(input(f"multiplicar {a:.2f}? "))
+                c = a * b
+            elif i == 4:
+                b = float(input(f"dividir {a:.2f}? "))
+                c = a / b
+            elif i == 5:
+                b = float(input(f"elevar {a:.2f}? "))
+                c = a ** b
+            print("Calculando...")
+            sleep(1)
+            return c
+        else:
+            print("Digite o número a ser", end=' ')
+            if i == 1:
+                a = float(input("somado: "))
+            elif i == 2:
+                a = float(input("subtraído: "))
+            elif i == 3:
+                a = float(input("multiplicado: "))
+            elif i == 4:
+                a = float(input("dividido: "))
+            elif i == 5:
+                a = float(input("elevado: "))
 
 def raiz(a=0):
     if a != 0:
