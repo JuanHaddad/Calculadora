@@ -18,7 +18,7 @@ def gameover():
     pen.clear()
     pen.color("red")
     pen.goto(0, 0)
-    pen.write("GAME OVER HAHAHA", align="center", font=("montserrat", 30, "bold"))
+    pen.write("GAME OVER", align="center", font=("montserrat", 30, "bold"))
     sleep(3)
     pen.clear()
 
