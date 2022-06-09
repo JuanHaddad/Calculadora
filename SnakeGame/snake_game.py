@@ -25,7 +25,7 @@ def gameover():
 # creating a window screen
 wn = turtle.Screen()
 wn.title("Snake Game")
-wn.bgcolor("blue")
+wn.bgcolor("#722731")
 # the width and height can be put as user's choice
 wn.setup(width=600, height=600)
 wn.tracer(0)
@@ -33,7 +33,7 @@ wn.tracer(0)
 # head of the snake
 head = turtle.Turtle()
 head.shape("square")
-head.color("white")
+head.color("#53cbbf")
 head.penup()
 head.goto(0, 0)
 head.direction = "Stop"
@@ -120,7 +120,7 @@ while True:
         new_segment = turtle.Turtle()
         new_segment.speed(0)
         new_segment.shape("square")
-        new_segment.color("orange") #tail color
+        new_segment.color("#48586f") #tail color
         new_segment.penup()
         segments.append(new_segment)
         delay -= 0.001
