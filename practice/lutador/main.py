@@ -1,7 +1,8 @@
 from lutador import Lutador
+from luta import Luta
 
 l = []
-for i in range(0, 5):
+for i in range(0, 6):
     if i == 0:
         lut = Lutador("Pretty Boy",
                        "França",
@@ -27,5 +28,23 @@ for i in range(0, 5):
                        28, 1.93, 81.6,
                        13, 0, 2)
         l.append(lut)
+    elif i == 4:
+        lut = Lutador('UFOCobol',
+                       'Brasil',
+                       37, 1.70, 119.3,
+                       5, 4, 3)
+        l.append(lut)
+    elif i == 5:
+        lut = Lutador('Nerdaart',
+                       'EUA',
+                       30, 1.81, 105.7,
+                       12, 2, 4)
+        l.append(lut)    
 
-l[0].apresentar()
+lul = Luta()
+
+lul.marcarLuta(l[3], l[2])
+lul.lutar()
+
+l[3].status()
+l[2].status()

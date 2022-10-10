@@ -89,6 +89,8 @@ class Lutador():
         print(F'{self.__getPeso()}Kg ')
         print(f'Categoria: {self.__getCategoria()}')
         print(F'Vitórias: {self.__getVitorias()}')
+        print(F'Derrotas: {self.__getDerrotas()}')
+        print(f'Empates: {self.__getEmpates()}')
     
     def status(self):
         print('-----------------')
