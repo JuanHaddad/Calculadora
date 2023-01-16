@@ -1,4 +1,3 @@
-import math
 from time import sleep
 
 def menu(msg): # Cria uma interface.
